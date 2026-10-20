@@ -36,3 +36,19 @@ public class Jagged {
 	}
 
 }
+class Main {
+    public static void main(String[] args) {
+        int a[] = {1, 2, 3, 4, 3, 2, 1};
+        int i;
+
+        for (i = 0; i < a.length / 2; i++) {
+            if (a[i] != a[a.length - 1 - i])
+                break;
+        }
+
+        if (i == a.length / 2)
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not Palindrome");
+    }
+}
